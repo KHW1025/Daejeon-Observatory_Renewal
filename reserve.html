@@ -156,8 +156,10 @@
         </ul>
         <div class="reserve_con">
           <div class="tab_list on">
-            <div class="p_step1">
-              <div class="step_title">1. 관람일, 관람시간 선택</div>
+            <div class="p_step step1 on">
+              <div class="p_step_title step_title">
+                1. 관람일, 관람시간 선택
+              </div>
               <div class="step_detail">
                 <div class="select_con">
                   <div class="select_day">
@@ -224,8 +226,8 @@
                 </button>
               </div>
             </div>
-            <div class="p_step2">
-              <div class="step_title">2. 예약자 정보 입력</div>
+            <div class="p_step step2">
+              <div class="p_step_title step_title">2. 예약자 정보 입력</div>
               <div class="step_detail">
                 <div class="info_con">
                   <div class="info info1">
@@ -238,185 +240,64 @@
                   </div>
                   <div class="info info3">
                     <span class="info_title">이메일</span>
-                    <input type="email" id="email1" class="email" placeholder="이메일 입력"/>
+                    <input
+                      type="email"
+                      id="email1"
+                      class="email"
+                      placeholder="이메일 입력"
+                    />
                     <span>@</span>
-                    <input type="email" id="email2" class="email"/>
+                    <input type="email" id="email2" class="email" />
                   </div>
                   <div class="info info4">
                     <span class="info_title">비밀번호</span>
-                    <input type="password" id="password" placeholder="예약확인 시 필요하오니 반드시 입력하십시오" />
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="예약확인 시 필요하오니 반드시 입력하십시오"
+                    />
                   </div>
                 </div>
                 <ul class="info_caution_con">
                   <li class="info_caution">
                     <i class="fa-solid fa-star"></i>
-                    이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을 입력해주세요.
+                    이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을
+                    입력해주세요.
                   </li>
                   <li class="info_caution">
                     <i class="fa-solid fa-star"></i>
-                    예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여 확인가능합니다. 본인만 아는 정보를 입력해주세요.
+                    예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여
+                    확인가능합니다. 본인만 아는 정보를 입력해주세요.
                   </li>
                 </ul>
                 <button class="step2_next_btn">
-                  개인정보 수집 및 이용동의 <i class="fa-solid fa-angle-right"></i>
+                  개인정보 수집 및 이용동의
+                  <i class="fa-solid fa-angle-right"></i>
                 </button>
-            </div>
-            <div class="p_step3">
-              <div class="step_title">3. 개인정보 수집 및 이용동의</div>
-              <div class="step_detail">  
-                  <ul class="agreement_con">
-                    <li class="ag_list">
-                      <span class="ag_title">정보의 수집·이용 목적</span>
-                      <p>
-                        '대전시민천문대'이(가) 수집하는 사용자의 개인정보는 교육/관람 예약 서비스를 위한
-                        <span>목적으로 수집하며 이 외의 목적으로 일체 사용하지 않습니다.</span>
-                      </p>
-                    </li>
-                    <li class="ag_list">
-                      <span class="ag_title">개인정보의 수집범위</span>
-                      <p>
-                        '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한 목적으로 수집하는 개인정보는 다음과 같습니다.
-                        <span>필수항목 : 이름, 비밀번호, 이메일주소, 연락처</span>
-                      </p>
-                    </li>
-                    <li class="ag_list">
-                      <span class="ag_title">개인정보 보유기간</span>
-                      <p>
-                        개인정보는 정보 확인 후 1년 이내 파기됩니다.
-                        <span class="r_point">위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span>
-                      </p>
-                    </li>
-                  </ul>
-                  <div class="agreecheck">
-                    <input type="checkbox" id="checkbox1" class="checkbox">
-                  <label for="checkbox1" class="check_label">위 내용에 동의하며 개인정보를 제공합니다.</label>
-                  </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="tab_list">
-          <div class="p_step1">
-            <div class="step_title">1. 관람일, 관람시간 선택</div>
-            <div class="step_detail">
-              <div class="select_con">
-                <div class="select_day">
-                  <span class="select_title">관람일 선택</span>
-                  <div class="calendar calendar2"></div>
-                </div>
-                <div class="select_time">
-                  <span class="select_title">관람시간 선택</span>
-                  <div class="time_table">
-                    <div class="time_table_today time_table_today2"></div>
-                    <ul class="time_con">
-                      <form action="time">
-                        <li>
-                          <span>선택</span>
-                          <span>관람시간</span>
-                          <span>예약 상태</span>
-                        </li>
-                        <li>
-                          <input type="radio" name="time" value="15" />
-                          <span>15 : 00</span>
-                          <span class="re_posible">예약 가능</span>
-                        </li>
-                        <li>
-                          <input type="radio" name="time" value="16" />
-                          <span>16 : 00</span>
-                          <span class="re_posible">예약 가능</span>
-                        </li>
-                        <li>
-                          <input type="radio" name="time" value="17" />
-                          <span>17 : 00</span>
-                          <span class="re_posible">예약 가능</span>
-                        </li>
-                        <li>
-                          <input type="radio" name="time" value="19" />
-                          <span>19 : 00</span>
-                          <span class="re_posible">예약 가능</span>
-                        </li>
-                        <li>
-                          <input type="radio" name="time" value="21" />
-                          <span>21 : 00</span>
-                          <span class="re_posible">예약 가능</span>
-                        </li>
-                      </form>
-                    </ul>
-                  </div>
-                </div>
+            <div class="p_step step3">
+              <div class="p_step_title step_title">
+                3. 개인정보 수집 및 이용동의
               </div>
-              <div class="time_schedule">
-                <div class="s1">
-                  <span class="b_point">관람시간</span>
-                  <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
-                </div>
-                <div class="s2">
-                  <span class="b_point">휴관일</span>
-                  <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
-                </div>
-                <div class="s3">
-                  <span class="b_point">이용요금</span>
-                  <span>무료</span>
-                </div>
-              </div>
-              <button class="step1_next_btn">
-                예약자정보 <i class="fa-solid fa-angle-right"></i>
-              </button>
-            </div>
-          </div>
-          <div class="p_step2">
-            <div class="step_title">2. 예약자 정보 입력</div>
-            <div class="step_detail">
-              <div class="info_con">
-                <div class="info info1">
-                  <span class="info_title">예약자명</span>
-                  <input type="text" id="name" placeholder="이름 입력" />
-                </div>
-                <div class="info info2">
-                  <span class="info_title">연락처</span>
-                  <input type="text" id="phone" placeholder="연락처 입력" />
-                </div>
-                <div class="info info3">
-                  <span class="info_title">이메일</span>
-                  <input type="email" id="email1" class="email" placeholder="이메일 입력"/>
-                  <span>@</span>
-                  <input type="email" id="email2" class="email"/>
-                </div>
-                <div class="info info4">
-                  <span class="info_title">비밀번호</span>
-                  <input type="password" id="password" placeholder="예약확인 시 필요하오니 반드시 입력하십시오" />
-                </div>
-              </div>
-              <ul class="info_caution_con">
-                <li class="info_caution">
-                  <i class="fa-solid fa-star"></i>
-                  이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을 입력해주세요.
-                </li>
-                <li class="info_caution">
-                  <i class="fa-solid fa-star"></i>
-                  예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여 확인가능합니다. 본인만 아는 정보를 입력해주세요.
-                </li>
-              </ul>
-              <button class="step2_next_btn">
-                개인정보 수집 및 이용동의 <i class="fa-solid fa-angle-right"></i>
-              </button>
-          </div>
-          <div class="p_step3">
-            <div class="step_title">3. 개인정보 수집 및 이용동의</div>
-            <div class="step_detail">  
+              <div class="step_detail">
                 <ul class="agreement_con">
                   <li class="ag_list">
                     <span class="ag_title">정보의 수집·이용 목적</span>
                     <p>
-                      '대전시민천문대'이(가) 수집하는 사용자의 개인정보는 교육/관람 예약 서비스를 위한
-                      <span>목적으로 수집하며 이 외의 목적으로 일체 사용하지 않습니다.</span>
+                      '대전시민천문대'이(가) 수집하는 사용자의 개인정보는
+                      교육/관람 예약 서비스를 위한
+                      <span
+                        >목적으로 수집하며 이 외의 목적으로 일체 사용하지
+                        않습니다.</span
+                      >
                     </p>
                   </li>
                   <li class="ag_list">
                     <span class="ag_title">개인정보의 수집범위</span>
                     <p>
-                      '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한 목적으로 수집하는 개인정보는 다음과 같습니다.
+                      '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한
+                      목적으로 수집하는 개인정보는 다음과 같습니다.
                       <span>필수항목 : 이름, 비밀번호, 이메일주소, 연락처</span>
                     </p>
                   </li>
@@ -424,17 +305,250 @@
                     <span class="ag_title">개인정보 보유기간</span>
                     <p>
                       개인정보는 정보 확인 후 1년 이내 파기됩니다.
-                      <span class="r_point">위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span>
+                      <span class="r_point"
+                        >위 내용에 동의하지 않을 시 서비스 이용이 제한될 수
+                        있습니다.</span
+                      >
                     </p>
                   </li>
                 </ul>
                 <div class="agreecheck">
-                  <input type="checkbox" id="checkbox1" class="checkbox">
-                <label for="checkbox1" class="check_label">위 내용에 동의하며 개인정보를 제공합니다.</label>
+                  <input type="checkbox" id="checkbox1" class="checkbox" />
+                  <label for="checkbox1" class="check_label"
+                    >위 내용에 동의하며 개인정보를 제공합니다.</label
+                  >
                 </div>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div class="tab_list">
+            <div class="o_step step1 on">
+              <div class="o_step_title step_title">
+                1. 관람일, 관람시간 선택
+              </div>
+              <div class="step_detail">
+                <div class="select_con">
+                  <div class="select_day">
+                    <span class="select_title">관람일 선택</span>
+                    <div class="calendar calendar2"></div>
+                  </div>
+                  <div class="select_time">
+                    <span class="select_title">관람시간 선택</span>
+                    <div class="time_table">
+                      <div class="time_table_today time_table_today2"></div>
+                      <ul class="time_con">
+                        <form action="time">
+                          <li>
+                            <span>선택</span>
+                            <span>관람시간</span>
+                            <span>예약 상태</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="15" />
+                            <span>15 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="16" />
+                            <span>16 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="17" />
+                            <span>17 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="19" />
+                            <span>19 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="21" />
+                            <span>21 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                        </form>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="time_schedule">
+                  <div class="s1">
+                    <span class="b_point">관람시간</span>
+                    <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
+                  </div>
+                  <div class="s2">
+                    <span class="b_point">휴관일</span>
+                    <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
+                  </div>
+                  <div class="s3">
+                    <span class="b_point">이용요금</span>
+                    <span>무료</span>
+                  </div>
+                </div>
+                <button class="step1_next_btn">
+                  예약자정보 <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="o_step step2">
+              <div class="o_step_title step_title">2. 예약자 정보 입력</div>
+              <div class="step_detail">
+                <div class="info_con">
+                  <div class="info_box">
+                    <div class="info info1">
+                      <span class="info_title">단체명</span>
+                      <input
+                        type="text"
+                        id="o_name"
+                        placeholder="단체명 입력"
+                      />
+                    </div>
+                    <div class="info info2">
+                      <span class="info_title">연락처</span>
+                      <input
+                        type="text"
+                        id="o_phone"
+                        placeholder="연락처 입력"
+                      />
+                    </div>
+                  </div>
+                  <div class="info_box">
+                    <div class="info info3">
+                      <span class="info_title">지역</span>
+                      <select name="" id="region">
+                        <option value="none">지역선택</option>
+                        <option value="01">대전</option>
+                        <option value="02">세종</option>
+                        <option value="03">서울</option>
+                        <option value="04">강원</option>
+                        <option value="05">경기</option>
+                        <option value="06">경남</option>
+                        <option value="07">경북</option>
+                        <option value="08">전남</option>
+                        <option value="09">전북</option>
+                        <option value="10">충남</option>
+                        <option value="11">충북</option>
+                        <option value="12">부산</option>
+                        <option value="13">대구</option>
+                        <option value="14">인천</option>
+                        <option value="15">광주</option>
+                        <option value="16">울산</option>
+                        <option value="17">제주도</option>
+                        <option value="18">울릉도</option>
+                      </select>
+                    </div>
+                    <div class="info info4">
+                      <span class="info_title">비밀번호</span>
+                      <input
+                        type="password"
+                        id="o_password"
+                        placeholder="예약확인 시 필요"
+                      />
+                    </div>
+                  </div>
+                  <div class="info_box">
+                    <div class="info info5">
+                      <span class="info_title">관람인원 수</span>
+                      <select name="" id="o_region">
+                        <option value="none">관람인원수</option>
+                        <option value="2029">20 ~ 29</option>
+                        <option value="3039">30 ~ 39</option>
+                        <option value="4049">40 ~ 49</option>
+                        <option value="5059">50 ~ 59</option>
+                        <option value="6069">60 ~ 69</option>
+                        <option value="7079">70 ~ 79</option>
+                        <option value="over">기타</option>
+                      </select>
+                    </div>
+                    <div class="info info6">
+                      <span class="info_title">인솔자</span>
+                      <select name="" id="o_leader">
+                        <option value="none">인솔자 유/무</option>
+                        <option value="y">유</option>
+                        <option value="n">무</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="info info7">
+                    <span class="info_title">이메일</span>
+                    <input
+                      type="email"
+                      id="o_email1"
+                      class="email"
+                      placeholder="이메일 입력"
+                    />
+                    <span>@</span>
+                    <input type="email" id="email2" class="email" />
+                  </div>
+                  <div class="info info8">
+                    <span class="info_title">관람자 연령</span>
+                    <input type="text" id="o_age" placeholder="" />
+                    <span>세 (평균연령으로 입력해주세요)</span>
+                  </div>
+                  <div class="info info9">
+                    <span class="info_title">기타사항</span>
+                    <textarea
+                      name="ref_note"
+                      id="ref_not"
+                      cols="75"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="step2_next_btn">
+                  개인정보 수집 및 이용동의
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="o_step step3">
+              <div class="o_step_title step_title">
+                3. 개인정보 수집 및 이용동의
+              </div>
+              <div class="step_detail">
+                <ul class="agreement_con">
+                  <li class="ag_list">
+                    <span class="ag_title">정보의 수집·이용 목적</span>
+                    <p>
+                      '대전시민천문대'이(가) 수집하는 사용자의 개인정보는
+                      교육/관람 예약 서비스를 위한
+                      <span
+                        >목적으로 수집하며 이 외의 목적으로 일체 사용하지
+                        않습니다.</span
+                      >
+                    </p>
+                  </li>
+                  <li class="ag_list">
+                    <span class="ag_title">개인정보의 수집범위</span>
+                    <p>
+                      '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한
+                      목적으로 수집하는 개인정보는 다음과 같습니다.
+                      <span>필수항목 : 이름, 비밀번호, 이메일주소, 연락처</span>
+                    </p>
+                  </li>
+                  <li class="ag_list">
+                    <span class="ag_title">개인정보 보유기간</span>
+                    <p>
+                      개인정보는 정보 확인 후 1년 이내 파기됩니다.
+                      <span class="r_point"
+                        >위 내용에 동의하지 않을 시 서비스 이용이 제한될 수
+                        있습니다.</span
+                      >
+                    </p>
+                  </li>
+                </ul>
+                <div class="agreecheck">
+                  <input type="checkbox" id="checkbox2" class="checkbox" />
+                  <label for="checkbox2" class="check_label"
+                    >위 내용에 동의하며 개인정보를 제공합니다.</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="last_btn">
           <a href="#" class="reseve_final_btn">예약신청</a>

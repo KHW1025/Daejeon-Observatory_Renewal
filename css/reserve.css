@@ -263,7 +263,7 @@ body {
 }
 .sec_inner {
   color: var(--font2);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .caution_sec .sec_inner {
   padding: 100px 0 50px 0;
@@ -353,7 +353,8 @@ body {
 .step_title {
   padding: 1.5rem;
   background-color: #d9d9d9;
-  font-size: var(--fs3);
+  font-size: var(--fs2);
+  border-bottom: 1px solid #293353;
 }
 .step_detail {
   padding: 20px 60px;
@@ -364,7 +365,8 @@ body {
 .select_con {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 3rem 60px 1rem;
+  /* padding: 20px 60px; */
   /* border: 1px solid red; */
 }
 .select_day,
@@ -396,6 +398,7 @@ body {
 
 .calendar-inner {
   padding: 10px 10px;
+  margin-bottom: 30px;
 }
 
 .calendar .calendar-inner .calendar-body {
@@ -514,6 +517,10 @@ body {
   background: var(--calendar-today-color);
   border-radius: 4px;
 }
+.calendar2 .calendar-inner .calendar-body2 .calendar-today2 {
+  background: var(--calendar-today-color);
+  border-radius: 4px;
+}
 
 .calendar .calendar-inner .calendar-body .calendar-today:hover {
   border: 1px solid transparent;
@@ -550,9 +557,18 @@ body {
 .select_day .calendar .calendar-inner .calendar-body .next-dates {
   color: rgb(167, 167, 167);
 }
+.select_day .calendar2 .calendar-inner .calendar-body2 .prev-dates2,
+.select_day .calendar2 .calendar-inner .calendar-body2 .next-dates2 {
+  color: rgb(167, 167, 167);
+}
 
 .calendar .calendar-inner .calendar-body .prev-dates:hover,
 .calendar .calendar-inner .calendar-body .next-dates:hover {
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+.calendar2 .calendar-inner .calendar-body2 .prev-dates2:hover,
+.calendar2 .calendar-inner .calendar-body2 .next-dates2:hover {
   border: 1px solid transparent;
   pointer-events: none;
 }
@@ -578,7 +594,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 .time_con form {
   width: 100%;
@@ -588,13 +604,17 @@ body {
   padding: 0.25rem 0.5rem;
 }
 .time_con li {
-  padding: 0.5rem;
+  padding: 0.75rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--font3);
   text-align: center;
+}
+.time_con li input {
+  width: 16px;
+  height: 16px;
 }
 .re_posible {
   padding: 0.25rem 0.5rem;
@@ -628,7 +648,7 @@ body {
   font-size: var(--fs2);
   cursor: pointer;
   align-self: center;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 3rem 0;
   transition: 0.3s;
 }
 .step1_next_btn {
@@ -645,37 +665,76 @@ body {
 }
 
 /* ////////////예약 sec step2 영역(개인)//////////// */
-.p_step2 .info_con {
-  width: 100%;
+.step2 .info_con {
+  /* width: 100%; */
   /* border: 1px solid red; */
-  margin-top: 2rem;
+  margin: 3rem 60px 1rem;
   font-size: var(--fs2);
 }
-.p_step2 .info_con .info {
+.step2 .info_con .info {
   padding: 1rem 0;
 }
-.p_step2 .info_con .info_title {
+.step2 .info_con .info_title {
   display: inline-block;
   width: 100px;
 }
-.p_step2 .info input {
+.step2 .info input {
   padding: 0.5rem 1rem;
   font-size: var(--fs2);
   border-radius: 3px;
 }
-.p_step2 .info3 span:last-of-type {
+.step2.p_step .info3 span:last-of-type {
   padding: 0 0.5rem;
 }
 #name,
 #phone,
 .email {
   width: 25%;
+  margin-left: 0.5rem;
+}
+#o_name,
+#o_phone,
+#o_password {
+  width: 50%;
+  margin-left: 0.5rem;
 }
 #password {
   width: 40%;
+  margin-left: 0.5rem;
+}
+#o_region {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs2);
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
+#o_age {
+  margin-left: 0.5rem;
+  width: 20px;
+}
+.info_box {
+  display: flex;
+}
+.info_box > div {
+  width: 50%;
+}
+.info_box select {
+  width: 56%;
+  padding: 0.5rem 1rem;
+  font-size: var(--fs2);
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
+.info9 {
+  display: flex;
+}
+.info9 textarea {
+  margin-left: 0.5rem;
+  font-size: var(--fs2);
+  border-radius: 3px;
 }
 .info_caution_con {
-  margin-top: 1rem;
+  margin: 1rem 60px;
 }
 .info_caution {
   padding: 0.5rem;
@@ -687,7 +746,7 @@ body {
 
 /* ////////////예약 sec step3 영역(개인)//////////// */
 .agreement_con {
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 60px;
   /* border: 1px solid red; */
   /* width: 100%; */
 }
@@ -716,7 +775,7 @@ body {
   color: #f50000;
 }
 .agreecheck {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,6 +812,19 @@ body {
 }
 .reseve_final_btn:hover {
   background-color: var(--c_point3);
+}
+
+/* ////////////아코디언//////////// */
+.p_step .step_detail,
+.o_step .step_detail {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+.p_step.on .step_detail,
+.o_step.on .step_detail {
+  height: 100%;
+  border-bottom: 1px solid #293353;
 }
 
 /* ////////////푸터 영역//////////// */
