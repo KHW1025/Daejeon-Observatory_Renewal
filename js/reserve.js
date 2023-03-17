@@ -532,40 +532,71 @@ const calendarControl2 = new CalendarControl2();
 
 ////////////////////// 아코디언
 
-// const $pLi = list.querySelectorAll(".p_step");
-// const $pTitle = list.querySelectorAll(".p_step_title");
+const $pLi = document.querySelectorAll(".p_step");
+const $pTitle = document.querySelectorAll(".p_step_title");
 
-// function toggleAccordion1() {
-//   const thisItem1 = this.parentNode;
-//   $pLi.forEach((item1) => {
-//     item1.classList.remove("on");
-//     if (thisItem1 == item1) {
-//       thisItem1.classList.add("on");
-//       return;
-//     }
-//   });
-// }
+function toggleAccordion1() {
+  const thisItem1 = this.parentNode;
+  $pLi.forEach((item1) => {
+    item1.classList.remove("on");
+    if (thisItem1 == item1) {
+      thisItem1.classList.add("on");
+      return;
+    }
+  });
+}
 
-// $pTitle.forEach((item) => {
-//   event.stopPropagation();
-//   item.addEventListener("click", toggleAccordion1);
-// });
+$pTitle.forEach((item) => {
+  item.addEventListener("click", toggleAccordion1);
+});
 
-// const $oLi = list.querySelectorAll(".o_step");
-// const $oTitle = list.querySelectorAll(".o_step_title");
+const $oLi = document.querySelectorAll(".o_step");
+const $oTitle = document.querySelectorAll(".o_step_title");
 
-// function toggleAccordion2() {
-//   const thisItem2 = this.parentNode;
-//   $oLi.forEach((item2) => {
-//     item2.classList.remove("on");
-//     if (thisItem2 == item2) {
-//       thisItem2.classList.add("on");
-//       return;
-//     }
-//   });
-// }
+function toggleAccordion2() {
+  const thisItem2 = this.parentNode;
+  $oLi.forEach((item2) => {
+    item2.classList.remove("on");
+    if (thisItem2 == item2) {
+      thisItem2.classList.add("on");
+      return;
+    }
+  });
+}
 
-// $oTitle.forEach((item) => {
-//   event.stopPropagation();
-//   item.addEventListener("click", toggleAccordion2);
-// });
+$oTitle.forEach((item) => {
+  item.addEventListener("click", toggleAccordion2);
+});
+
+////////////////////// 버튼클릭하면 on클래스
+const $btn1to1 = document.querySelector(".btn1-1");
+const $btn1to2 = document.querySelector(".btn1-2");
+const $pStepAll = document.querySelectorAll(".p_step");
+const $pStep1 = document.querySelector(".p_step.step1");
+const $pStep2 = document.querySelector(".p_step.step2");
+const $pStep3 = document.querySelector(".p_step.step3");
+
+$btn1to1.addEventListener("click", () => {
+  $pStep1.classList.remove("on");
+  $pStep2.classList.add("on");
+});
+$btn1to2.addEventListener("click", () => {
+  $pStep2.classList.remove("on");
+  $pStep3.classList.add("on");
+});
+
+const $btn2to1 = document.querySelector(".btn2-1");
+const $btn2to2 = document.querySelector(".btn2-2");
+const $oStepAll = document.querySelectorAll(".o_step");
+const $oStep1 = document.querySelector(".o_step.step1");
+const $oStep2 = document.querySelector(".o_step.step2");
+const $oStep3 = document.querySelector(".o_step.step3");
+
+$btn2to1.addEventListener("click", () => {
+  $oStep1.classList.remove("on");
+  $oStep2.classList.add("on");
+});
+$btn2to2.addEventListener("click", () => {
+  $oStep2.classList.remove("on");
+  $oStep3.classList.add("on");
+});

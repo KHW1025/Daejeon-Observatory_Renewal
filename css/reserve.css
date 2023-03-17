@@ -355,6 +355,7 @@ body {
   background-color: #d9d9d9;
   font-size: var(--fs2);
   border-bottom: 1px solid #293353;
+  cursor: pointer;
 }
 .step_detail {
   padding: 20px 60px;
@@ -577,7 +578,7 @@ body {
   width: 100%;
   height: 87%;
   /* border: 1px solid blueviolet; */
-  margin: 20px 0;
+  margin-top: 20px;
   border-radius: var(--calendar-border-radius);
   background-color: var(--font1);
   padding: 1.5rem;
@@ -627,7 +628,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  margin: 1rem 0;
+  margin: 1rem 60px;
 }
 .s1,
 .s2,
@@ -648,16 +649,20 @@ body {
   font-size: var(--fs2);
   cursor: pointer;
   align-self: center;
-  margin: 2rem 0 3rem 0;
   transition: 0.3s;
 }
 .step1_next_btn {
+  margin: 1rem 0 2rem 0;
   width: 180px;
   height: 55px;
 }
 .step2_next_btn {
+  margin: 5rem 0 3rem 0;
   width: 350px;
   height: 55px;
+}
+.o_step .step2_next_btn {
+  margin-top: 1rem;
 }
 .step1_next_btn:hover,
 .step2_next_btn:hover {
@@ -668,7 +673,7 @@ body {
 .step2 .info_con {
   /* width: 100%; */
   /* border: 1px solid red; */
-  margin: 3rem 60px 1rem;
+  margin: 5rem 60px 1rem;
   font-size: var(--fs2);
 }
 .step2 .info_con .info {
@@ -746,14 +751,17 @@ body {
 
 /* ////////////예약 sec step3 영역(개인)//////////// */
 .agreement_con {
-  margin: 3rem 60px;
+  margin: auto 60px;
   /* border: 1px solid red; */
   /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 .ag_list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: var(--fs1);
   color: #303030;
 }
@@ -775,7 +783,7 @@ body {
   color: #f50000;
 }
 .agreecheck {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -818,12 +826,16 @@ body {
 .p_step .step_detail,
 .o_step .step_detail {
   height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   padding: 0;
+  transition: 0.3s;
 }
 .p_step.on .step_detail,
 .o_step.on .step_detail {
   height: 100%;
+  /* max-height: 800px; */
+  height: 750px;
   border-bottom: 1px solid #293353;
 }
 
