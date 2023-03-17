@@ -129,7 +129,7 @@ function CalendarControl1() {
         <div class="calendar-year-month">
         <div class="calendar-year-label"></div>
         <div class="yearKo">년</div>
-        <div class="calendar-month-label"></div>
+        <div class="calendar-month-label"></div>&nbsp;(개인예약)
         </div>
         <div class="calendar-next"><a href="#"><i class="fa-solid fa-angle-right"></i></a></div>
         </div>
@@ -374,7 +374,7 @@ function CalendarControl2() {
         <div class="calendar-year-month">
         <div class="calendar-year-label"></div>
         <div class="yearKo">년</div>
-        <div class="calendar-month-label"></div>
+        <div class="calendar-month-label"></div>&nbsp;(단체예약)
         </div>
         <div class="calendar-next"><a href="#"><i class="fa-solid fa-angle-right"></i></a></div>
         </div>
