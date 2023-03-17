@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reserve.css" />
+    <script src="./js/reserve.js" defer></script>
+  </head>
+  <body>
+    <header class="hd">
+      <div class="hd_inner mw">
+        <a href="./index.html" class="logo">
+          <img src="./img/white_logo.png" alt="로고" />
+        </a>
+        <div class="top_box">
+          <ul class="gnb">
+            <li>
+              <a href="#">천문대소개</a>
+              <ul class="sub">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">현황 및 조직도</a></li>
+                <li><a href="#">시설안내</a></li>
+                <li><a href="#">홍보자료</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용안내</a>
+              <ul class="sub">
+                <li><a href="#">관람시간 안내</a></li>
+                <li><a href="#">프로그램 소개</a></li>
+                <li><a href="#">천문정보</a></li>
+                <li><a href="#">행사사진</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">참여마당</a>
+              <ul class="sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">질문과 답변</a></li>
+                <li><a href="#">방문후기</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+                <li><a href="#">봉사활동</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">예약마당</a>
+              <ul class="sub">
+                <li><a href="#">관람예약</a></li>
+                <li><a href="#">별음악회/시낭송회</a></li>
+                <li><a href="#">특별 프로그램</a></li>
+                <li><a href="#">봉사활동 예약</a></li>
+                <li><a href="#">예약확인/취소</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="icon">
+            <a href="#" class="my_page">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+          <div class="ham">
+            <!-- <i class="fa-solid fa-bars fa-3x"></i> -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="reserve_navigation">
+      <ul class="nav_inner mw2">
+        <li class="here">
+          <a href="#">개인 & 단체 관람 예약</a>
+        </li>
+        <li>
+          <a href="#">특별프로그램 신청</a>
+        </li>
+        <li>
+          <a href="#">예약 확인</a>
+        </li>
+      </ul>
+    </div>
+    <section class="caution_sec">
+      <div class="sec_inner mw2">
+        <div class="caution_con">
+          <div class="caution_title">
+            <span> 단체관람 예약시 주의사항 </span>
+            <span>
+              대전시민천문대 단체관람 예약시 주의사항을 안내해드립니다.
+            </span>
+          </div>
+          <ul class="c_list_con">
+            <li class="c_list1">
+              - 단체예약은
+              <span class="y_point">여러 단체의 동시 입장을 제한</span>하여
+              관람의 혼선을 방지하고
+              <span class="y_point">원활한 관람 진행을 목적</span>으로 합니다.
+            </li>
+            <li class="c_list2">
+              -
+              <span class="y_point"
+                >30인 이상 단체인 경우 반드시 예약을 하셔야 합니다. (무료)</span
+              >
+            </li>
+            <li class="c_list3">
+              - 30인 미만 인원은 원하는 날짜에 단체예약이 되어있는지 일정 확인
+              후 단체예약이 없는 시간을 택해 예약없이 오시면 됩니다.
+            </li>
+            <li class="c_list4">
+              - 예약시간은 천체투영관 운영시간 기준이며 천체투영관
+              <span class="y_point">운영10분전까지 입장</span>하시기 바랍니다.
+            </li>
+            <li class="c_list5">
+              - 예약시간이후 도착할 경우 프로그램진행상 천체투영관 입장을 못하게
+              되며 다음시간 프로그램에 참여하셔야 됩니다.
+              <br /><span class="y_point"
+                >(다음시간 단체예약이 있을 경우 입장제한) 예약시간 엄수</span
+              >
+            </li>
+            <li class="c_list6">
+              -
+              <span class="y_point"
+                >온라인 예약 뒤 천문대담당자가 전화로 확인 후 예약완료가 되어야
+                신청이 완료됩니다.</span
+              >
+            </li>
+            <li class="c_list7">
+              - 부득이한 사정으로 예약을 취소해야 할 경우 천문대로 연락주시기
+              바랍니다.
+            </li>
+          </ul>
+        </div>
+        <div class="img_con">
+          <img src="./img/reserve_page/space_icon.png" alt="우주비행사" />
+        </div>
+      </div>
+    </section>
+    <section class="reserve_sec">
+      <div class="sec_inner mw2">
+        <ul class="tab_menu">
+          <li class="personal on">개인관람</li>
+          <li class="organization">단체관람</li>
+        </ul>
+        <div class="reserve_con">
+          <div class="tab_list on">
+            <div class="p_step1">
+              <div class="step_title">1. 관람일, 관람시간 선택</div>
+              <div class="step_detail">
+                <div class="select_con">
+                  <div class="select_day">
+                    <span class="select_title">관람일 선택</span>
+                    <div class="calendar calendar1"></div>
+                  </div>
+                  <div class="select_time">
+                    <span class="select_title">관람시간 선택</span>
+                    <div class="time_table">
+                      <div class="time_table_today time_table_today1"></div>
+                      <ul class="time_con">
+                        <form action="time">
+                          <li>
+                            <span>선택</span>
+                            <span>관람시간</span>
+                            <span>예약 상태</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="15" />
+                            <span>15 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="16" />
+                            <span>16 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="17" />
+                            <span>17 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="19" />
+                            <span>19 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                          <li>
+                            <input type="radio" name="time" value="21" />
+                            <span>21 : 00</span>
+                            <span class="re_posible">예약 가능</span>
+                          </li>
+                        </form>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="time_schedule">
+                  <div class="s1">
+                    <span class="b_point">관람시간</span>
+                    <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
+                  </div>
+                  <div class="s2">
+                    <span class="b_point">휴관일</span>
+                    <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
+                  </div>
+                  <div class="s3">
+                    <span class="b_point">이용요금</span>
+                    <span>무료</span>
+                  </div>
+                </div>
+                <button class="step1_next_btn">
+                  예약자정보 <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="p_step2">
+              <div class="step_title">2. 예약자 정보 입력</div>
+              <div class="step_detail">
+                <div class="info_con">
+                  <div class="info info1">
+                    <span class="info_title">예약자명</span>
+                    <input type="text" id="name" placeholder="이름 입력" />
+                  </div>
+                  <div class="info info2">
+                    <span class="info_title">연락처</span>
+                    <input type="text" id="phone" placeholder="연락처 입력" />
+                  </div>
+                  <div class="info info3">
+                    <span class="info_title">이메일</span>
+                    <input type="email" id="email1" class="email" placeholder="이메일 입력"/>
+                    <span>@</span>
+                    <input type="email" id="email2" class="email"/>
+                  </div>
+                  <div class="info info4">
+                    <span class="info_title">비밀번호</span>
+                    <input type="password" id="password" placeholder="예약확인 시 필요하오니 반드시 입력하십시오" />
+                  </div>
+                </div>
+                <ul class="info_caution_con">
+                  <li class="info_caution">
+                    <i class="fa-solid fa-star"></i>
+                    이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을 입력해주세요.
+                  </li>
+                  <li class="info_caution">
+                    <i class="fa-solid fa-star"></i>
+                    예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여 확인가능합니다. 본인만 아는 정보를 입력해주세요.
+                  </li>
+                </ul>
+                <button class="step2_next_btn">
+                  개인정보 수집 및 이용동의 <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+            <div class="p_step3">
+              <div class="step_title">3. 개인정보 수집 및 이용동의</div>
+              <div class="step_detail">  
+                  <ul class="agreement_con">
+                    <li class="ag_list">
+                      <span class="ag_title">정보의 수집·이용 목적</span>
+                      <p>
+                        '대전시민천문대'이(가) 수집하는 사용자의 개인정보는 교육/관람 예약 서비스를 위한
+                        <span>목적으로 수집하며 이 외의 목적으로 일체 사용하지 않습니다.</span>
+                      </p>
+                    </li>
+                    <li class="ag_list">
+                      <span class="ag_title">개인정보의 수집범위</span>
+                      <p>
+                        '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한 목적으로 수집하는 개인정보는 다음과 같습니다.
+                        <span>필수항목 : 이름, 비밀번호, 이메일주소, 연락처</span>
+                      </p>
+                    </li>
+                    <li class="ag_list">
+                      <span class="ag_title">개인정보 보유기간</span>
+                      <p>
+                        개인정보는 정보 확인 후 1년 이내 파기됩니다.
+                        <span class="r_point">위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span>
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="agreecheck">
+                    <input type="checkbox" id="checkbox1" class="checkbox">
+                  <label for="checkbox1" class="check_label">위 내용에 동의하며 개인정보를 제공합니다.</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="tab_list">
+          <div class="p_step1">
+            <div class="step_title">1. 관람일, 관람시간 선택</div>
+            <div class="step_detail">
+              <div class="select_con">
+                <div class="select_day">
+                  <span class="select_title">관람일 선택</span>
+                  <div class="calendar calendar2"></div>
+                </div>
+                <div class="select_time">
+                  <span class="select_title">관람시간 선택</span>
+                  <div class="time_table">
+                    <div class="time_table_today time_table_today2"></div>
+                    <ul class="time_con">
+                      <form action="time">
+                        <li>
+                          <span>선택</span>
+                          <span>관람시간</span>
+                          <span>예약 상태</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="time" value="15" />
+                          <span>15 : 00</span>
+                          <span class="re_posible">예약 가능</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="time" value="16" />
+                          <span>16 : 00</span>
+                          <span class="re_posible">예약 가능</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="time" value="17" />
+                          <span>17 : 00</span>
+                          <span class="re_posible">예약 가능</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="time" value="19" />
+                          <span>19 : 00</span>
+                          <span class="re_posible">예약 가능</span>
+                        </li>
+                        <li>
+                          <input type="radio" name="time" value="21" />
+                          <span>21 : 00</span>
+                          <span class="re_posible">예약 가능</span>
+                        </li>
+                      </form>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="time_schedule">
+                <div class="s1">
+                  <span class="b_point">관람시간</span>
+                  <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
+                </div>
+                <div class="s2">
+                  <span class="b_point">휴관일</span>
+                  <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
+                </div>
+                <div class="s3">
+                  <span class="b_point">이용요금</span>
+                  <span>무료</span>
+                </div>
+              </div>
+              <button class="step1_next_btn">
+                예약자정보 <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p_step2">
+            <div class="step_title">2. 예약자 정보 입력</div>
+            <div class="step_detail">
+              <div class="info_con">
+                <div class="info info1">
+                  <span class="info_title">예약자명</span>
+                  <input type="text" id="name" placeholder="이름 입력" />
+                </div>
+                <div class="info info2">
+                  <span class="info_title">연락처</span>
+                  <input type="text" id="phone" placeholder="연락처 입력" />
+                </div>
+                <div class="info info3">
+                  <span class="info_title">이메일</span>
+                  <input type="email" id="email1" class="email" placeholder="이메일 입력"/>
+                  <span>@</span>
+                  <input type="email" id="email2" class="email"/>
+                </div>
+                <div class="info info4">
+                  <span class="info_title">비밀번호</span>
+                  <input type="password" id="password" placeholder="예약확인 시 필요하오니 반드시 입력하십시오" />
+                </div>
+              </div>
+              <ul class="info_caution_con">
+                <li class="info_caution">
+                  <i class="fa-solid fa-star"></i>
+                  이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을 입력해주세요.
+                </li>
+                <li class="info_caution">
+                  <i class="fa-solid fa-star"></i>
+                  예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여 확인가능합니다. 본인만 아는 정보를 입력해주세요.
+                </li>
+              </ul>
+              <button class="step2_next_btn">
+                개인정보 수집 및 이용동의 <i class="fa-solid fa-angle-right"></i>
+              </button>
+          </div>
+          <div class="p_step3">
+            <div class="step_title">3. 개인정보 수집 및 이용동의</div>
+            <div class="step_detail">  
+                <ul class="agreement_con">
+                  <li class="ag_list">
+                    <span class="ag_title">정보의 수집·이용 목적</span>
+                    <p>
+                      '대전시민천문대'이(가) 수집하는 사용자의 개인정보는 교육/관람 예약 서비스를 위한
+                      <span>목적으로 수집하며 이 외의 목적으로 일체 사용하지 않습니다.</span>
+                    </p>
+                  </li>
+                  <li class="ag_list">
+                    <span class="ag_title">개인정보의 수집범위</span>
+                    <p>
+                      '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한 목적으로 수집하는 개인정보는 다음과 같습니다.
+                      <span>필수항목 : 이름, 비밀번호, 이메일주소, 연락처</span>
+                    </p>
+                  </li>
+                  <li class="ag_list">
+                    <span class="ag_title">개인정보 보유기간</span>
+                    <p>
+                      개인정보는 정보 확인 후 1년 이내 파기됩니다.
+                      <span class="r_point">위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span>
+                    </p>
+                  </li>
+                </ul>
+                <div class="agreecheck">
+                  <input type="checkbox" id="checkbox1" class="checkbox">
+                <label for="checkbox1" class="check_label">위 내용에 동의하며 개인정보를 제공합니다.</label>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="last_btn">
+          <a href="#" class="reseve_final_btn">예약신청</a>
+        </div>
+      </div>
+    </section>
+    <footer class="ft">
+      <div class="ft_inner mw">
+        <a href="./index.html" class="ft_logo">
+          <img src="./img/white_logo.png" alt="푸터 로고" />
+        </a>
+        <span class="ft_detail"
+          >(34128) 전광역시 유성구 과학로 213-48 (신성동 7-13)</span
+        >
+        <span class="ft_detail">TEL. 042-863-8762, 8763FAX. 042-863-8761</span>
+        <span class="ft_detail"
+          >Copyright © 2017 Daejeon Observatory. All rights reserved</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
