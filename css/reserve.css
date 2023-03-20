@@ -635,9 +635,19 @@ body {
 .s3 {
   padding: 0.25rem 1.5rem 0 0;
 }
+.s1 {
+  margin-left: 4.5rem;
+  text-indent: -4.5rem;
+}
+.s2 {
+  margin-left: 3.5rem;
+  text-indent: -3.5rem;
+}
 .time_schedule .b_point {
+  /* display: inline-block; */
   font-weight: bold;
   padding-right: 0.5rem;
+  /* width: 70px !important; */
 }
 .step1_next_btn,
 .step2_next_btn {
@@ -737,12 +747,15 @@ body {
   margin-left: 0.5rem;
   font-size: var(--fs2);
   border-radius: 3px;
+  width: calc(100% - 100px);
 }
 .info_caution_con {
   margin: 1rem 60px;
 }
 .info_caution {
   padding: 0.5rem;
+  /* margin-left: 2rem; */
+  /* text-indent: -2rem; */
 }
 .fa-star {
   color: #ff5c00;
@@ -751,7 +764,8 @@ body {
 
 /* ////////////예약 sec step3 영역(개인)//////////// */
 .agreement_con {
-  margin: auto 60px;
+  margin: 5rem 60px 1rem;
+  /* margin: auto 60px; */
   /* border: 1px solid red; */
   /* width: 100%; */
   display: flex;
@@ -833,7 +847,7 @@ body {
 }
 .p_step.on .step_detail,
 .o_step.on .step_detail {
-  height: 100%;
+  /* height: 100%; */
   /* max-height: 800px; */
   height: 750px;
   border-bottom: 1px solid #293353;
@@ -922,6 +936,74 @@ body {
   .ham {
     display: block;
   }
+  .select_con {
+    display: block;
+  }
+  .select_day,
+  .select_time {
+    width: 100%;
+  }
+  .select_time {
+    margin-top: 4rem;
+  }
+  .select_title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .p_step.on .step_detail,
+  .o_step.on .step_detail {
+    height: 100%;
+  }
+  .step2 .info_con {
+    margin: 3rem 60px 1rem;
+  }
+  .info_box {
+    display: block;
+  }
+  .info_box > div {
+    width: 100%;
+    /* margin: 0 !important; */
+  }
+  .step2 .info_con .info {
+    padding: 0.5rem 0;
+  }
+  .step2 .info_con .info_title {
+    width: 75px;
+    font-size: var(--fs1);
+  }
+  #o_name,
+  #o_phone,
+  #o_password {
+    width: 60%;
+    margin-left: 0;
+  }
+  #name,
+  #phone {
+    width: 60%;
+    margin-left: 0;
+  }
+  .email,
+  #password,
+  .info_box select,
+  #o_region,
+  #o_age {
+    margin-left: 0;
+  }
+  .info_caution {
+    padding: 0.25rem 0;
+    margin-left: 1rem;
+    text-indent: -1rem;
+  }
+  .step2_next_btn {
+    width: 300px;
+    padding: 0;
+    margin: 2rem 0 2rem;
+  }
+  .agreement_con {
+    margin: 3rem 60px 1rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -942,7 +1024,27 @@ body {
     padding-left: 30px;
     text-indent: -10px;
   }
-
+  .step2 .info input,
+  #o_region {
+    padding: 0.25rem;
+    font-size: var(--fs1);
+  }
+  .info_box select {
+    padding: 0.25rem;
+    font-size: var(--fs1);
+  }
+  .step2.p_step .info3 span:last-of-type {
+    padding: 0;
+  }
+  .info8 {
+    font-size: var(--fs1);
+  }
+  .ag_list {
+    margin-bottom: 2rem;
+  }
+  .agreecheck {
+    margin: 2rem 0;
+  }
   .ft_inner {
     display: flex;
     flex-direction: column;
@@ -968,6 +1070,118 @@ body {
   .img_con {
     display: none;
   }
+  .tab_menu {
+    justify-content: space-around;
+  }
+  .tab_menu li {
+    margin-right: 0;
+    width: 45%;
+    height: 45px;
+  }
+  .step_title {
+    padding: 1rem;
+  }
+  .select_con {
+    margin: 2rem 20px 1rem;
+  }
+  .calendar-inner {
+    margin-bottom: 0;
+  }
+  .calendar .calendar-inner .calendar-controls .calendar-year-month,
+  .calendar
+    .calendar-inner
+    .calendar-controls
+    .calendar-year-month
+    .calendar-year-label,
+  .calendar
+    .calendar-inner
+    .calendar-controls
+    .calendar-year-month
+    .calendar-month-label,
+  .yearKo {
+    font-size: 0.75rem;
+  }
+  .calendar .calendar-inner .calendar-controls .calendar-next a,
+  .calendar .calendar-inner .calendar-controls .calendar-prev a {
+    padding: 0 0.25rem;
+    margin: 0;
+    font-size: var(--fs1);
+  }
+  .calendar-controls {
+    margin-bottom: 0.5rem;
+  }
+  .calendar .calendar-inner .calendar-today-date {
+    display: none;
+  }
+  .select_time {
+    margin-top: 2rem;
+  }
+  .time_schedule {
+    margin: 1rem 20px;
+  }
+  .time_table_today {
+    font-size: 1rem;
+  }
+  .time_schedule {
+    /* font-size: 0.8rem; */
+  }
+  .time_schedule .b_point {
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+  .step1_next_btn {
+    width: 50%;
+    font-size: var(--fs1);
+    padding: 0;
+    height: 45px;
+  }
+  .step2 .info_con {
+    margin: 2rem 20px 1rem;
+  }
+  .step2.p_step .info3 span:last-of-type,
+  .step2.o_step .info7 span:last-of-type {
+    font-size: 0.75rem;
+  }
+  .info_caution_con {
+    margin: 0.75rem 20px 1rem;
+  }
+  .step2_next_btn {
+    font-size: var(--fs1);
+    height: 45px;
+  }
+  .info_caution {
+    margin-left: 2rem;
+    text-indent: -1rem;
+  }
+  .info8 {
+    font-size: 0.75rem;
+  }
+  .info9 textarea {
+    width: calc(100% - 75px);
+  }
+  .agreement_con {
+    margin: 2rem 20px 1rem;
+  }
+  .ag_list p {
+    padding: 0;
+  }
+  .check_label {
+    font-size: var(--fs1);
+  }
+  .last_btn {
+    margin: 3rem 0;
+  }
+  .reseve_final_btn {
+    margin-right: 0;
+    width: 45%;
+    height: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-size: var(--fs1);
+  }
   .ft_detail {
     font-size: 0.75rem;
   }
@@ -982,7 +1196,38 @@ body {
     height: 60px;
     font-size: 0.75rem;
   }
-
+  .step_title {
+    /* padding: 0.5rem; */
+    font-size: var(--fs1);
+  }
+  .reserve_sec .sec_inner {
+    padding: 0;
+  }
+  .calendar-body {
+    font-size: 0.75rem;
+  }
+  .calendar .calendar-inner .calendar-body div {
+    padding: 2px;
+    min-height: 15px;
+    line-height: 15px;
+  }
+  .time_con li {
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+  }
+  .step1_next_btn {
+    font-size: 0.75rem;
+  }
+  .step2 .info_con .info_title {
+    width: 70px;
+  }
+  .info8 {
+    font-size: 0.5rem;
+  }
+  .step2_next_btn {
+    font-size: 0.75rem;
+    width: 70%;
+  }
   .ft_detail {
     font-size: 0.5rem;
   }

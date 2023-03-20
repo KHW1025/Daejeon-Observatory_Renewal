@@ -545,7 +545,6 @@ function toggleAccordion1() {
     }
   });
 }
-
 $pTitle.forEach((item) => {
   item.addEventListener("click", toggleAccordion1);
 });
@@ -563,7 +562,6 @@ function toggleAccordion2() {
     }
   });
 }
-
 $oTitle.forEach((item) => {
   item.addEventListener("click", toggleAccordion2);
 });
