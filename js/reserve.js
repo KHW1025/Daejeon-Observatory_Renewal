@@ -538,39 +538,39 @@ const calendarControl2 = new CalendarControl2();
 
 ////////////////////// 아코디언
 
-const $pLi = document.querySelectorAll(".p_step");
-const $pTitle = document.querySelectorAll(".p_step_title");
+// const $pLi = document.querySelectorAll(".p_step");
+// const $pTitle = document.querySelectorAll(".p_step_title");
 
-function toggleAccordion1() {
-  const thisItem1 = this.parentNode;
-  $pLi.forEach((item1) => {
-    item1.classList.remove("on");
-    if (thisItem1 == item1) {
-      thisItem1.classList.add("on");
-      return;
-    }
-  });
-}
-$pTitle.forEach((item) => {
-  item.addEventListener("click", toggleAccordion1);
-});
+// function toggleAccordion1() {
+//   const thisItem1 = this.parentNode;
+//   $pLi.forEach((item1) => {
+//     item1.classList.remove("on");
+//     if (thisItem1 == item1) {
+//       thisItem1.classList.add("on");
+//       return;
+//     }
+//   });
+// }
+// $pTitle.forEach((item) => {
+//   item.addEventListener("click", toggleAccordion1);
+// });
 
-const $oLi = document.querySelectorAll(".o_step");
-const $oTitle = document.querySelectorAll(".o_step_title");
+// const $oLi = document.querySelectorAll(".o_step");
+// const $oTitle = document.querySelectorAll(".o_step_title");
 
-function toggleAccordion2() {
-  const thisItem2 = this.parentNode;
-  $oLi.forEach((item2) => {
-    item2.classList.remove("on");
-    if (thisItem2 == item2) {
-      thisItem2.classList.add("on");
-      return;
-    }
-  });
-}
-$oTitle.forEach((item) => {
-  item.addEventListener("click", toggleAccordion2);
-});
+// function toggleAccordion2() {
+//   const thisItem2 = this.parentNode;
+//   $oLi.forEach((item2) => {
+//     item2.classList.remove("on");
+//     if (thisItem2 == item2) {
+//       thisItem2.classList.add("on");
+//       return;
+//     }
+//   });
+// }
+// $oTitle.forEach((item) => {
+//   item.addEventListener("click", toggleAccordion2);
+// });
 
 // step1
 ////////////////////// 입력 오류

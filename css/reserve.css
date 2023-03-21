@@ -714,6 +714,9 @@ body {
   width: 25%;
   margin-left: 0.5rem;
 }
+#p_email2 {
+  width: 25%;
+}
 #o_name,
 #o_phone,
 #o_password {
