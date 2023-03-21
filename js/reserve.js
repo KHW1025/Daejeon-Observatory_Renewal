@@ -25,6 +25,7 @@ $gnbLi.forEach((btn, i) => {
 ////////////////////// tab menu
 const $tabMenu = document.querySelectorAll(".tab_menu>li");
 const $tabList = document.querySelectorAll(".tab_list");
+const $lastBtn = document.querySelectorAll(".last_btn");
 
 $tabMenu.forEach((btn, i) => {
   btn.addEventListener("click", function () {
@@ -37,6 +38,11 @@ $tabMenu.forEach((btn, i) => {
       b.classList.remove("on");
     });
     $tabList[i].classList.add("on");
+
+    $lastBtn.forEach((c) => {
+      c.classList.remove("on");
+    });
+    $lastBtn[i].classList.add("on");
   });
 });
 
@@ -811,4 +817,23 @@ $oAge.addEventListener("input", () => {
 
 // step3
 ////////////////////// 동의에 체크하면 예약신청버튼 활성화
-// 각 input에 있는 값이 없으면 error가 뜬다.
+const $agreeCheck1 = document.querySelector("#checkbox1");
+const $agreeCheck2 = document.querySelector("#checkbox2");
+
+const $fnBtn1 = document.querySelector(".p_last_btn .reserve_final_btn");
+const $fnBtn2 = document.querySelector(".o_last_btn .reserve_final_btn");
+
+$fnBtn1.addEventListener("click", () => {
+  if ($agreeCheck1.checked == true) {
+    alert("예약신청이 완료되었습니다.");
+  } else {
+    alert("개인정보 수집에 동의해주세요.");
+  }
+});
+$fnBtn2.addEventListener("click", () => {
+  if ($agreeCheck2.checked == true) {
+    alert("예약신청이 완료되었습니다.");
+  } else {
+    alert("개인정보 수집에 동의해주세요.");
+  }
+});

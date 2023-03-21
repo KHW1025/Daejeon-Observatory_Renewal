@@ -824,11 +824,16 @@ body {
 /* ////////////예약신청버튼//////////// */
 .last_btn {
   margin: 5rem 0 3rem 0;
-  display: flex;
+  display: none;
   justify-content: center;
 }
-.reseve_final_btn {
-  display: inline-block;
+.last_btn.on {
+  display: flex;
+}
+.reserve_final_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 60px;
   color: var(--font1);
@@ -838,6 +843,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid #ffffff;
   border-radius: 12px;
+  cursor: pointer;
   transition: 0.3s;
 }
 .reseve_final_btn:hover {
