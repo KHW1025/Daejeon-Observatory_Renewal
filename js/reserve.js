@@ -566,35 +566,249 @@ $oTitle.forEach((item) => {
   item.addEventListener("click", toggleAccordion2);
 });
 
-////////////////////// 버튼클릭하면 on클래스
+// step1
+////////////////////// 입력 오류
+// 관람시간을 선택하지 않았을때 (예약자정보>) 버튼누르면 작동 X
+// (관람시간 선택하면 다음 title에 on클래스)
+const $timeSelect1 = document.querySelectorAll(".p_time_s");
 const $btn1to1 = document.querySelector(".btn1-1");
-const $btn1to2 = document.querySelector(".btn1-2");
-const $pStepAll = document.querySelectorAll(".p_step");
 const $pStep1 = document.querySelector(".p_step.step1");
 const $pStep2 = document.querySelector(".p_step.step2");
-const $pStep3 = document.querySelector(".p_step.step3");
+const $selectError1 = document.querySelector(".p_timeselect_error");
 
 $btn1to1.addEventListener("click", () => {
-  $pStep1.classList.remove("on");
-  $pStep2.classList.add("on");
-});
-$btn1to2.addEventListener("click", () => {
-  $pStep2.classList.remove("on");
-  $pStep3.classList.add("on");
+  for (let i = 0; i < $timeSelect1.length; i++) {
+    if ($timeSelect1[i].checked) {
+      $pStep1.classList.remove("on");
+      $pStep2.classList.add("on");
+      $selectError1.textContent = "";
+      break;
+    } else {
+      $selectError1.textContent = "관람시간을 선택해주세요";
+    }
+  }
 });
 
+// 단체예약
+
+const $timeSelect2 = document.querySelectorAll(".o_time_s");
 const $btn2to1 = document.querySelector(".btn2-1");
-const $btn2to2 = document.querySelector(".btn2-2");
-const $oStepAll = document.querySelectorAll(".o_step");
 const $oStep1 = document.querySelector(".o_step.step1");
 const $oStep2 = document.querySelector(".o_step.step2");
-const $oStep3 = document.querySelector(".o_step.step3");
+const $selectError2 = document.querySelector(".o_timeselect_error");
 
 $btn2to1.addEventListener("click", () => {
-  $oStep1.classList.remove("on");
-  $oStep2.classList.add("on");
+  for (let i = 0; i < $timeSelect2.length; i++) {
+    if ($timeSelect2[i].checked) {
+      $oStep1.classList.remove("on");
+      $oStep2.classList.add("on");
+      $selectError2.textContent = "";
+      break;
+    } else {
+      $selectError2.textContent = "관람시간을 선택해주세요";
+    }
+  }
 });
+
+// step2
+////////////////////// (개인정보수집및이용동의>)버튼클릭하면 on클래스
+// 각 input에 있는 값이 없으면 error가 뜬다.
+const $btn1to2 = document.querySelector(".btn1-2");
+const $pStep3 = document.querySelector(".p_step.step3");
+
+const $step2Inputs1 = document.querySelectorAll(".p_step.step2 input");
+const $noInputError1 = document.querySelector(".p_noinput_error");
+
+const $pName = document.querySelector("#p_name");
+const $pNameError = document.querySelector(".p_name_error");
+
+const $pPhone = document.querySelector("#p_phone");
+const $pPhoneError = document.querySelector(".p_phone_error");
+
+const $pEmail1 = document.querySelector("#p_email1");
+const $pEmail2 = document.querySelector("#p_email2");
+const $pEmailError = document.querySelector(".p_email_error");
+
+const $pPassword = document.querySelector("#p_password");
+const $pPasswordError = document.querySelector(".p_password_error");
+
+$btn1to2.addEventListener("click", () => {
+  if (!$pName.value) {
+    $pNameError.textContent = "이름을 입력해주세요";
+  } else {
+    $pNameError.textContent = "";
+  }
+  if (!$pPhone.value) {
+    $pPhoneError.textContent = "연락처를 입력해주세요";
+  } else {
+    $pPhoneError.textContent = "";
+  }
+  if (!$pEmail1.value || !$pEmail2.value) {
+    $pEmailError.textContent = "이메일을 입력해주세요";
+  } else {
+    $pEmailError.textContent = "";
+  }
+  if (!$pPassword.value) {
+    $pPasswordError.textContent = "비밀번호를 입력해주세요";
+  } else {
+    $pPasswordError.textContent = "";
+  }
+
+  for (let i = 0; i < $step2Inputs1.length; i++) {
+    if (!$step2Inputs1[i].value) {
+      $noInputError1.textContent = "입력정보를 확인해주세요";
+      $pStep2.classList.add("on");
+      $pStep3.classList.remove("on");
+      break;
+    } else {
+      $pStep2.classList.remove("on");
+      $pStep3.classList.add("on");
+      $noInputError1.textContent = "";
+    }
+  }
+});
+
+$pName.addEventListener("input", () => {
+  $pNameError.textContent = "";
+});
+$pPhone.addEventListener("input", () => {
+  $pPhoneError.textContent = "";
+});
+$pEmail1.addEventListener("input", () => {
+  $pEmailError.textContent = "";
+});
+$pEmail2.addEventListener("input", () => {
+  $pEmailError.textContent = "";
+});
+$pPassword.addEventListener("input", () => {
+  $pPasswordError.textContent = "";
+});
+
+// 단체예약
+
+const $btn2to2 = document.querySelector(".btn2-2");
+const $oStep3 = document.querySelector(".o_step.step3");
+
+const $step2Inputs2 = document.querySelectorAll(".o_step.step2 input");
+const $noInputError2 = document.querySelector(".o_noinput_error");
+
+const $oName = document.querySelector("#o_name");
+const $oNameError = document.querySelector(".o_name_error");
+
+const $oPhone = document.querySelector("#o_phone");
+const $oPhoneError = document.querySelector(".o_phone_error");
+
+const $oRegion = document.querySelector("#o_region");
+const $oRegionError = document.querySelector(".o_region_error");
+
+const $oPassword = document.querySelector("#o_password");
+const $oPasswordError = document.querySelector(".o_password_error");
+
+const $oNum = document.querySelector("#o_num");
+const $oNumError = document.querySelector(".o_num_error");
+
+const $oLeader = document.querySelector("#o_leader");
+const $oLeaderError = document.querySelector(".o_leader_error");
+
+const $oEmail1 = document.querySelector("#o_email1");
+const $oEmail2 = document.querySelector("#o_email2");
+const $oEmailError = document.querySelector(".o_email_error");
+
+const $oAge = document.querySelector("#o_age");
+const $oAgeError = document.querySelector(".o_age_error");
+
 $btn2to2.addEventListener("click", () => {
-  $oStep2.classList.remove("on");
-  $oStep3.classList.add("on");
+  if (!$oName.value) {
+    $oNameError.textContent = "단체명을 입력해주세요";
+  } else {
+    $oNameError.textContent = "";
+  }
+  if (!$oPhone.value) {
+    $oPhoneError.textContent = "연락처를 입력해주세요";
+  } else {
+    $oPhoneError.textContent = "";
+  }
+  if ($oRegion.value == "none") {
+    $oRegionError.textContent = "지역을 선택해주세요";
+  } else {
+    $oRegionError.textContent = "";
+  }
+  if (!$oPassword.value) {
+    $oPasswordError.textContent = "비밀번호를 입력해주세요";
+  } else {
+    $oPasswordError.textContent = "";
+  }
+  if ($oNum.value == "none") {
+    $oNumError.textContent = "관람인원수를 선택해주세요";
+  } else {
+    $oNumError.textContent = "";
+  }
+  if ($oLeader.value == "none") {
+    $oLeaderError.textContent = "인솔자 유/무를 선택해주세요";
+  } else {
+    $oLeaderError.textContent = "";
+  }
+  if (!$oEmail1.value || !$oEmail2.value) {
+    $oEmailError.textContent = "이메일을 입력해주세요";
+  } else {
+    $oEmailError.textContent = "";
+  }
+  if (!$oAge.value) {
+    $oAgeError.textContent = "연령을 입력해주세요";
+  } else if (!/^[0-9]*$/.test($oAge.value)) {
+    $oAgeError.textContent = "숫자로 입력해주세요";
+  } else {
+    $oAgeError.textContent = "";
+  }
+
+  for (let i = 0; i < $step2Inputs2.length; i++) {
+    if (
+      !$step2Inputs2[i].value ||
+      $oRegion.value == "none" ||
+      $oNum.value == "none" ||
+      $oLeader.value == "none" ||
+      !/^[0-9]*$/.test($oAge.value) == true
+    ) {
+      $noInputError2.textContent = "입력정보를 확인해주세요";
+      $oStep2.classList.add("on");
+      $oStep3.classList.remove("on");
+      break;
+    } else {
+      $oStep2.classList.remove("on");
+      $oStep3.classList.add("on");
+      $noInputError2.textContent = "";
+    }
+  }
 });
+
+$oName.addEventListener("input", () => {
+  $oNameError.textContent = "";
+});
+$oPhone.addEventListener("input", () => {
+  $oPhoneError.textContent = "";
+});
+$oRegion.addEventListener("change", () => {
+  $oRegionError.textContent = "";
+});
+$oPassword.addEventListener("input", () => {
+  $oPasswordError.textContent = "";
+});
+$oNum.addEventListener("change", () => {
+  $oNumError.textContent = "";
+});
+$oLeader.addEventListener("change", () => {
+  $oLeaderError.textContent = "";
+});
+$oEmail1.addEventListener("input", () => {
+  $oEmailError.textContent = "";
+});
+$oEmail2.addEventListener("input", () => {
+  $oEmailError.textContent = "";
+});
+$oAge.addEventListener("input", () => {
+  $oAgeError.textContent = "";
+});
+
+// step3
+////////////////////// 동의에 체크하면 예약신청버튼 활성화
+// 각 input에 있는 값이 없으면 error가 뜬다.
