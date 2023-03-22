@@ -61,16 +61,12 @@ a {
   margin: auto;
 }
 body {
-  background: linear-gradient(
-    180deg,
-    #293353 62.23%,
-    rgba(50, 88, 208, 0.17) 137.02%
-  );
+  background-color: #2e3139;
 }
 /* ////////////헤더 영역////////////*/
 .hd {
   /* background-color: #0d3799f3; */
-  background-color: #32353d;
+  background-color: #2e3139;
 }
 .hd_inner {
   display: flex;
@@ -155,6 +151,7 @@ body {
 .sub > li:hover a {
   /* background-color: rgb(90, 125, 214); */
   background-color: rgba(57, 91, 177);
+  /* background-color: var(--c_point2); */
   color: var(--font1);
 }
 
@@ -849,7 +846,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.reseve_final_btn:hover {
+.reserve_final_btn:hover {
   background-color: var(--c_point3);
 }
 
@@ -915,7 +912,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: #0d3799f3; */
-    background-color: #32353d;
+    background-color: #636b81;
     width: 100%;
     border-radius: 0 0 1rem 1rem;
     position: absolute;
