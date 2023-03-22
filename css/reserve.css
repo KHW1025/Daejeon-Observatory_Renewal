@@ -317,6 +317,7 @@ body {
   margin-bottom: 2rem;
 }
 .tab_menu li {
+  font-family: "GmarketSansMedium";
   padding: 0.5rem 1rem;
   width: 180px;
   height: 50px;
@@ -329,6 +330,9 @@ body {
   cursor: pointer;
   margin-right: 1.5rem;
   transition: 0.3s;
+}
+.tab_menu li span {
+  margin-top: 0.25rem;
 }
 .tab_menu li.on {
   background-color: rgba(255, 255, 255, 0.3);
@@ -348,12 +352,25 @@ body {
   color: var(--font3);
 }
 .step_title {
+  font-family: "GmarketSansMedium";
   padding: 1.5rem;
   background-color: #d9d9d9;
   font-size: var(--fs2);
   border-bottom: 1px solid #293353;
   /* cursor: pointer; */
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+.step_title span {
+  margin-top: 0.25rem;
+}
+.step_title .fa-check {
+  margin-left: 0.5rem;
+  display: none;
+}
+.p_step.done .step_title .fa-check {
+  display: block;
 }
 .p_step.on .step_title,
 .o_step.on .step_title {
@@ -401,7 +418,7 @@ body {
 
 .calendar-inner {
   padding: 10px 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .calendar .calendar-inner .calendar-body {
@@ -664,11 +681,13 @@ body {
 }
 .step1_next_btn {
   /* margin-top: 1rem; */
+  font-family: "GmarketSansMedium";
   margin: 1rem 0 0.25rem;
   width: 180px;
   height: 55px;
 }
 .step2_next_btn {
+  font-family: "GmarketSansMedium";
   margin: 5rem 0 0.25rem 0;
   width: 350px;
   height: 55px;
@@ -831,6 +850,7 @@ body {
   display: flex;
 }
 .reserve_final_btn {
+  font-family: "GmarketSansMedium";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -845,6 +865,9 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: 0.3s;
+}
+.reserve_final_btn span {
+  margin-top: 0.25rem;
 }
 .reserve_final_btn:hover {
   background-color: var(--c_point3);

@@ -537,45 +537,10 @@ function CalendarControl2() {
 const calendarControl2 = new CalendarControl2();
 
 ////////////////////// 아코디언
-
-// const $pLi = document.querySelectorAll(".p_step");
-// const $pTitle = document.querySelectorAll(".p_step_title");
-
-// function toggleAccordion1() {
-//   const thisItem1 = this.parentNode;
-//   $pLi.forEach((item1) => {
-//     item1.classList.remove("on");
-//     if (thisItem1 == item1) {
-//       thisItem1.classList.add("on");
-//       return;
-//     }
-//   });
-// }
-// $pTitle.forEach((item) => {
-//   item.addEventListener("click", toggleAccordion1);
-// });
-
-// const $oLi = document.querySelectorAll(".o_step");
-// const $oTitle = document.querySelectorAll(".o_step_title");
-
-// function toggleAccordion2() {
-//   const thisItem2 = this.parentNode;
-//   $oLi.forEach((item2) => {
-//     item2.classList.remove("on");
-//     if (thisItem2 == item2) {
-//       thisItem2.classList.add("on");
-//       return;
-//     }
-//   });
-// }
-// $oTitle.forEach((item) => {
-//   item.addEventListener("click", toggleAccordion2);
-// });
-
 // step1
 ////////////////////// 입력 오류
 // 관람시간을 선택하지 않았을때 (예약자정보>) 버튼누르면 작동 X
-// (관람시간 선택하면 다음 title에 on클래스)
+// (관람시간 선택하면 버튼 클릭 시 현재 title에 done, 다음 title에 on클래스 추가)
 const $timeSelect1 = document.querySelectorAll(".p_time_s");
 const $btn1to1 = document.querySelector(".btn1-1");
 const $pStep1 = document.querySelector(".p_step.step1");
@@ -586,6 +551,7 @@ $btn1to1.addEventListener("click", () => {
   for (let i = 0; i < $timeSelect1.length; i++) {
     if ($timeSelect1[i].checked) {
       $pStep1.classList.remove("on");
+      $pStep1.classList.add("done");
       $pStep2.classList.add("on");
       $selectError1.textContent = "";
       break;
@@ -607,6 +573,7 @@ $btn2to1.addEventListener("click", () => {
   for (let i = 0; i < $timeSelect2.length; i++) {
     if ($timeSelect2[i].checked) {
       $oStep1.classList.remove("on");
+      $oStep1.classList.add("done");
       $oStep2.classList.add("on");
       $selectError2.textContent = "";
       break;
@@ -617,7 +584,8 @@ $btn2to1.addEventListener("click", () => {
 });
 
 // step2
-////////////////////// (개인정보수집및이용동의>)버튼클릭하면 on클래스
+/////////////// (개인정보수집및이용동의>)버튼 클릭 시
+// 현재 title에 done, 다음 title에 on클래스 추가
 // 각 input에 있는 값이 없으면 error가 뜬다.
 const $btn1to2 = document.querySelector(".btn1-2");
 const $pStep3 = document.querySelector(".p_step.step3");
@@ -664,10 +632,12 @@ $btn1to2.addEventListener("click", () => {
     if (!$step2Inputs1[i].value) {
       $noInputError1.textContent = "입력정보를 확인해주세요";
       $pStep2.classList.add("on");
+      $pStep2.classList.remove("done");
       $pStep3.classList.remove("on");
       break;
     } else {
       $pStep2.classList.remove("on");
+      $pStep2.classList.add("done");
       $pStep3.classList.add("on");
       $noInputError1.textContent = "";
     }
@@ -777,10 +747,12 @@ $btn2to2.addEventListener("click", () => {
     ) {
       $noInputError2.textContent = "입력정보를 확인해주세요";
       $oStep2.classList.add("on");
+      $oStep2.classList.remove("done");
       $oStep3.classList.remove("on");
       break;
     } else {
       $oStep2.classList.remove("on");
+      $oStep2.classList.add("done");
       $oStep3.classList.add("on");
       $noInputError2.textContent = "";
     }
