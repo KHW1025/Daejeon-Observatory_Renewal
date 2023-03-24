@@ -65,7 +65,7 @@
 > <img width="350" alt="image" src="https://user-images.githubusercontent.com/119498531/227408549-2085be46-0f7d-4836-bc72-8015ef16ad34.png">
 > <img width="355" alt="image" src="https://user-images.githubusercontent.com/119498531/227408935-62742283-ed14-475a-8093-7a2acf099d3f.png">
 
-> - 예약페이지의 아코디언 디자인을 적용한 step을 단계
+> - 예약페이지의 아코디언 디자인을 적용한 step 단계
 > <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227408549-2085be46-0f7d-4836-bc72-8015ef16ad34.png">
 > <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227416846-9afaa684-3c71-4711-b98d-7ed6af4aee0b.png">
 > <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227416951-9a5c0df3-72cd-4980-9f46-419ff46cb20b.png">
