@@ -225,7 +225,7 @@ body {
   background-color: #d9d9d9;
 }
 .nav_inner {
-  width: 500px;
+  width: 800px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -236,10 +236,11 @@ body {
   transition: 0.3s;
 }
 .nav_inner li:hover {
-  color: #3a6fad;
+  color: #91b7e2;
 }
 .here {
   position: relative;
+  color: #3a6fad;
 }
 .here::after {
   content: "";
@@ -247,12 +248,14 @@ body {
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #32353d;
+  background-color: #3a6fad;
   bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   transition: 0.3s;
 }
 .here:hover::after {
-  background-color: #3a6fad;
+  background-color: #91b7e2;
 }
 /* ////////////주의사항 sec 영역//////////// */
 .caution_sec {
@@ -306,9 +309,6 @@ body {
 }
 
 /* ////////////예약 sec step1 영역(개인)//////////// */
-.reserve_sec {
-  /* background-color: #293353; */
-}
 .reserve_sec .sec_inner {
   padding: 2rem;
 }
@@ -509,6 +509,7 @@ body {
   min-width: 100px;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: bold;
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next {
@@ -526,7 +527,7 @@ body {
   .calendar-year-month
   .calendar-month-label,
 .yearKo {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
 }
 .yearKo {
@@ -984,6 +985,9 @@ body {
   .ham {
     display: block;
   }
+  .nav_inner {
+    width: 95%;
+  }
   .select_con {
     display: block;
   }
@@ -1114,7 +1118,17 @@ body {
 
 @media (max-width: 600px) {
   .nav_inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90px;
+  }
+  .nav_inner li {
+    padding: 0.5rem;
+  }
+  .here::after {
     width: 80%;
+    bottom: 0;
+    height: 2px;
   }
   .caution_sec .sec_inner {
     padding: 50px 0;
@@ -1256,13 +1270,15 @@ body {
     width: 200px;
     padding: 0;
   }
-  .nav_inner {
-    height: 60px;
-    font-size: 0.75rem;
-  }
   .step_title {
     /* padding: 0.5rem; */
     font-size: var(--fs1);
+  }
+  .nav_inner {
+    height: 100%;
+  }
+  .nav_inner li {
+    font-size: 0.9rem;
   }
   .reserve_sec .sec_inner {
     padding: 0;

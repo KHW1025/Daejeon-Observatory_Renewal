@@ -290,13 +290,47 @@ a {
 .reserve_btn:hover > span::after {
   right: -1.5rem;
 }
+/* .starlight_box {
+  border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(-30deg);
+}
 .starlight {
   position: absolute;
-  top: 20%;
-  right: 20%;
-  transform: translate(-20%);
-  opacity: 0.8;
-}
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    rgba(95, 145, 255, 1)
+  );
+  border-radius: 1000px;
+  filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+  opacity: 1;
+  animation: starAni 1.5s ease-in-out infinite;
+} */
+/* @keyframes starAni {
+  0% {
+    width: 0;
+    transform: translateX(350px);
+  }
+  30% {
+    opacity: 0;
+    width: 100px;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    transform: translateX(0);
+  }
+} */
 
 /* ////////////sec1 영역//////////// */
 .sec1 {
