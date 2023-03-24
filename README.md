@@ -55,3 +55,20 @@
 > - 설계 시안 (figma) :https://www.figma.com/file/fM0VH77TEqGh34N8BNudCj/%EA%B9%80%ED%98%84%EC%9A%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B802?node-id=458%3A663&t=X0dStEnDg28XQ4S2-1
 <br>
 
+## :five: 기능구현
+<br>
+
+> - Slider를 활용한 시설소개 컨텐츠 슬라이드
+> <img width="500" alt="image" src="https://user-images.githubusercontent.com/119498531/227408063-324b90c0-607b-4a3e-bd3d-c08f323b278f.png">
+
+> - 탭 메뉴 형식으로 나뉜 '개인예약', '단체예약' 파트
+> <img width="350" alt="image" src="https://user-images.githubusercontent.com/119498531/227408549-2085be46-0f7d-4836-bc72-8015ef16ad34.png">
+> <img width="355" alt="image" src="https://user-images.githubusercontent.com/119498531/227408935-62742283-ed14-475a-8093-7a2acf099d3f.png">
+
+> - 아코디언 형태의 디자인을 적용한 step 단계
+> <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227408549-2085be46-0f7d-4836-bc72-8015ef16ad34.png">
+> <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227416846-9afaa684-3c71-4711-b98d-7ed6af4aee0b.png">
+> <img width="300" alt="image" src="https://user-images.githubusercontent.com/119498531/227416951-9a5c0df3-72cd-4980-9f46-419ff46cb20b.png">
+
+> - input과 select요소 값을 입력하지 않으면 출력되는 오류 메세지
+> <img width="350" alt="image" src="https://user-images.githubusercontent.com/119498531/227420046-ae85f68e-b8e6-46d0-995a-e9ebbb78e60f.png">
