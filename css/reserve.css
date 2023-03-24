@@ -215,8 +215,7 @@ body {
   transform: rotate(-45deg) translate(4px, 0px);
   transform-origin: left center;
 }
-
-.ham:hover span {
+.calendar1 .ham:hover span {
   background-color: var(--c_point1);
 }
 
@@ -225,7 +224,8 @@ body {
   background-color: #d9d9d9;
 }
 .nav_inner {
-  width: 800px;
+  width: calc(100% - 2rem);
+  padding: 0 2rem;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -475,13 +475,18 @@ body {
   border: 1px solid var(--calendar-date-hover-color);
   border-radius: 4px;
 } */
-.calendar .calendar-inner .calendar-body div:not(:nth-child(7n + 2)):hover {
+.calendar .calendar-inner .calendar-body div:not(:nth-child(7n + 2)):hover,
+.calendar .calendar-inner .calendar-body div:not(.prev-dates):hover,
+.calendar .calendar-inner .calendar-body div:not(.next-dates):hover,
+.calendar .calendar-inner .calendar-body div:not(.prev-dates2):hover,
+.calendar .calendar-inner .calendar-body div:not(.next-dates2):hover {
   border: 1px solid var(--calendar-date-hover-color);
   border-radius: 4px;
 }
 
 .calendar .calendar-inner .calendar-body div.empty-dates:hover {
   border: 1px solid transparent;
+  pointer-events: none;
 }
 
 .calendar .calendar-inner .calendar-controls {
@@ -585,12 +590,10 @@ body {
 
 .calendar .calendar-inner .calendar-body .prev-dates:hover,
 .calendar .calendar-inner .calendar-body .next-dates:hover {
-  border: 1px solid transparent;
   pointer-events: none;
 }
 .calendar2 .calendar-inner .calendar-body2 .prev-dates2:hover,
 .calendar2 .calendar-inner .calendar-body2 .next-dates2:hover {
-  border: 1px solid transparent;
   pointer-events: none;
 }
 
@@ -984,9 +987,6 @@ body {
   }
   .ham {
     display: block;
-  }
-  .nav_inner {
-    width: 95%;
   }
   .select_con {
     display: block;
