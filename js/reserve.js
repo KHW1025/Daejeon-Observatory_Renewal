@@ -537,6 +537,18 @@ function CalendarControl2() {
 }
 const calendarControl2 = new CalendarControl2();
 
+////////////////////// 달력 날짜 선택
+
+// const $dateList = document.querySelectorAll(".number-item");
+// $dateList.forEach((btn, i) => {
+//   btn.addEventListener("click", function () {
+//     $dateList.forEach((a) => {
+//       a.classList.remove("calendar-today");
+//     });
+//     $dateList[i].classList.add("calendar-today");
+//   });
+// });
+
 ////////////////////// 아코디언
 // step1
 ////////////////////// 입력 오류
