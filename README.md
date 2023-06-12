@@ -1,6 +1,4 @@
-<div align="center">
-<img width="329" alt="image" src="https://user-images.githubusercontent.com/119498531/226822221-8d53174b-aca7-4ea6-8275-9141c6517345.png">
-</div>
+<img width="800" src="https://github.com/KHW1025/Daejeon-Observatory_Renewal/assets/119498531/480f5c04-2626-4cb8-a8f5-bc0a7094efb4"/>
 
 # Daejeon Observatory Web Page
 <br>
