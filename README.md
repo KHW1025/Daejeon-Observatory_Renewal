@@ -1,6 +1,6 @@
 <img width="800" src="https://github.com/KHW1025/Daejeon-Observatory_Renewal/assets/119498531/480f5c04-2626-4cb8-a8f5-bc0a7094efb4"/>
 
-# Daejeon Observatory Web Page
+# Daejeon Observatory Renewal
 <br>
 
 > **대전시민천문대 사이트 리뉴얼**
