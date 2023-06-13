@@ -20,9 +20,9 @@
 ## 2️⃣ 프로젝트 역할
 <br>
 
-> - 김현우 : 기획, 디자인, 프론트엔드
-> - 금현진 : 기획 (https://github.com/kumhyeonjin)
-> - 이채림 : 기획 (https://github.com/2chaelim)
+> - 김현우 : 기획, 디자인(100%), 프론트엔드(100%)
+> - [금현진](https://github.com/kumhyeonjin) : 기획
+> - [이채림](https://github.com/2chaelim) : 기획 
 > - 주자명 : 기획 
 > 
 <br>
@@ -49,8 +49,8 @@
 ## 4️⃣ 기획 & 설계 시안
 <br>
 
-> - 리뉴얼 기획서 (구글 프레젠테이션) :https://docs.google.com/presentation/d/1PZsELZlvVKKN9mGNXlIuLr7Rc3w4KDz3E1k69gy3cZo/edit?usp=sharing
-> - 설계 시안 (figma) :https://www.figma.com/file/fM0VH77TEqGh34N8BNudCj/%EA%B9%80%ED%98%84%EC%9A%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B802?node-id=458%3A663&t=X0dStEnDg28XQ4S2-1
+> - [리뉴얼 기획서 (구글 프레젠테이션)](https://docs.google.com/presentation/d/1PZsELZlvVKKN9mGNXlIuLr7Rc3w4KDz3E1k69gy3cZo/edit?usp=sharing)
+> - [설계 시안 (figma)](https://www.figma.com/file/fM0VH77TEqGh34N8BNudCj/%EA%B9%80%ED%98%84%EC%9A%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B802?node-id=458%3A663&t=X0dStEnDg28XQ4S2-1)
 <br>
 
 ## :five: 기능구현
